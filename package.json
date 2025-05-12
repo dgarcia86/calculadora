@@ -1,9 +1,10 @@
 {
-  "name": "calculadora-avanzada",
+  "name": "calculadora-final",
   "version": "1.0.0",
-  "description": "Calculadora avanzada con compilación estática",
+  "description": "Versión final estilizada de calculadora",
   "scripts": {
-    "build": "mkdir -p dist && cp index.html style.css script.js dist/",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && mkdir -p dist && cp index.html style.css script.js favicon.ico dist/",
     "start": "echo 'Este proyecto es estático. Usa build.'"
   },
   "devDependencies": {}
